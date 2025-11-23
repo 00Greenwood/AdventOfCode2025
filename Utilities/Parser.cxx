@@ -1,8 +1,6 @@
 #include "precompiled.hxx"
 #include "Parser.hxx"
 
-using namespace Parser;
-
 void parse(std::string name, std::string& output) {
   std::filesystem::path inputDir(INPUTS_DIR);
   std::filesystem::path filePath = inputDir / (name + ".txt");

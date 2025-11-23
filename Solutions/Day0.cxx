@@ -1,6 +1,8 @@
 #include "precompiled.hxx"
 #include "Day0.hxx"
 
+#include <Parser.hxx>
+
 Day0::Day0() : Day(0) {
 }
 
@@ -12,5 +14,5 @@ void Day0::initialize() {
 }
 
 std::string Day0::solve(Part) const {
-  return std::to_string(m_input);
+  return m_input;
 }

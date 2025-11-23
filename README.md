@@ -4,7 +4,7 @@ Solution to Advent of Code 2025 in C++.
 
 # Prerequisites
 
-* make: ^4.3
+* cmake: ^3.22.1
 * gcc: ^11.4.0
 
 
@@ -13,17 +13,17 @@ Solution to Advent of Code 2025 in C++.
 ```
 mkdir Build
 cd Build
-make -DCMAKE_BUILD_TYPE=Release ..
+cmake ..
 ```
 
 # Build
 
 ```
-make --build . --config=Release
+cmake --build .
 ```
 
 # Run
 
 ```
-./AdventOfCode2024
+./AdventOfCode2025
 ```

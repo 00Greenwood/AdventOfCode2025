@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Day.hxx"
+
 class Day0 : public Day {
 public:
   explicit Day0();
@@ -9,5 +11,5 @@ protected:
   void initialize() override;
   std::string solve(Part) const override;
 
-  int m_input;
+  std::string m_input;
 };

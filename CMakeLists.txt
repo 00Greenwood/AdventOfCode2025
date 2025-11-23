@@ -3,13 +3,17 @@ cmake_minimum_required(VERSION 3.20.4)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-project(AdventOfCode2024)
+# Enable debug symbols
+set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_CXX_FLAGS_DEBUG "-g -O0")
 
-add_executable(AdventOfCode2024 main.cxx)
+project(AdventOfCode2025)
 
-target_precompile_headers(AdventOfCode2024 PRIVATE precompiled.hxx)
+add_executable(AdventOfCode2025 main.cxx)
 
-target_include_directories(AdventOfCode2024 PUBLIC
+target_precompile_headers(AdventOfCode2025 PRIVATE precompiled.hxx)
+
+target_include_directories(AdventOfCode2025 PUBLIC
     "${PROJECT_BINARY_DIR}"
     "${PROJECT_SOURCE_DIR}/Solutions"
     "${PROJECT_SOURCE_DIR}/Utilities"
@@ -18,5 +22,5 @@ target_include_directories(AdventOfCode2024 PUBLIC
 add_subdirectory(Solutions)
 add_subdirectory(Utilities)
 
-target_link_libraries(AdventOfCode2024 PUBLIC Solutions)
+target_link_libraries(AdventOfCode2025 PUBLIC Solutions)
 
