@@ -113,3 +113,19 @@ void parse(std::string name, std::vector<std::string>& output) {
     output.push_back(line);
   }
 }
+
+void parse(std::string name, std::vector<std::pair<char, int>>& output)  {
+  std::string input;
+  parse(name, input);
+  std::stringstream ss(input);
+  std::string line;
+  std::regex lineRegex("([LR])(\\d+)");
+  while (std::getline(ss, line, '\n')) {
+    std::smatch match;
+    if (std::regex_match(line, match, lineRegex)) {
+      char direction = match[1].str()[0];
+      int distance = std::stoi(match[2].str());
+      output.push_back({direction, distance});
+    }
+  }
+}

@@ -19,3 +19,5 @@ void parse(std::string name, std::vector<std::vector<size_t>>&);
 void parse(std::string name, std::vector<std::vector<char>>&);
 
 void parse(std::string name, std::vector<std::string>&);
+
+void parse(std::string name, std::vector<std::pair<char, int>>&);
