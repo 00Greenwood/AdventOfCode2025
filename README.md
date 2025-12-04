@@ -5,7 +5,8 @@ Solution to Advent of Code 2025 in C++.
 # Prerequisites
 
 * cmake: ^3.22.1
-* gcc: ^11.4.0
+* gcc: ^13.3.0
+* g++: ^13.3.0
 
 
 # Make
