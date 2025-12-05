@@ -28,3 +28,9 @@ cmake --build .
 ```
 ./AdventOfCode2025
 ```
+
+# Format
+
+```
+clang-format -i -- **.cxx **.hxx
+```
