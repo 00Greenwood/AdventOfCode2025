@@ -1,5 +1,6 @@
-#include "Day1.hxx"
 #include "precompiled.hxx"
+
+#include "Day1.hxx"
 
 #include <Parser.hxx>
 

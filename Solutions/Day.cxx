@@ -1,5 +1,6 @@
-#include "Day.hxx"
 #include "precompiled.hxx"
+
+#include "Day.hxx"
 
 Day::Day(int day) : m_day(std::to_string(day)) {
 }

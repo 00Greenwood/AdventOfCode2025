@@ -1,0 +1,15 @@
+#pragma once
+
+#include "Day.hxx"
+
+class Day6 : public Day {
+public:
+  explicit Day6();
+  virtual ~Day6();
+
+protected:
+  void initialize() override;
+  std::string solve(Part) const override;
+
+  std::vector<std::string> m_input;
+};
