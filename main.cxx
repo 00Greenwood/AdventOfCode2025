@@ -8,6 +8,7 @@
 #include "Solutions/Day5.hxx"
 #include "Solutions/Day6.hxx"
 #include "Solutions/Day7.hxx"
+#include "Solutions/Day8.hxx"
 
 int main(int, char**) {
   auto mutex = std::make_shared<std::mutex>();
@@ -21,6 +22,7 @@ int main(int, char**) {
   days.push_back(std::make_unique<Day5>());
   days.push_back(std::make_unique<Day6>());
   days.push_back(std::make_unique<Day7>());
+  days.push_back(std::make_unique<Day8>());
 
   for (const auto& day : days) {
     day->solve(mutex);
